@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TestBfs",
+      "request": "launch",
+      "mainClass": "BFS.TestBfs",
+      "projectName": "Graph-Theory_98c9ad0"
+    },
+    {
+      "type": "java",
+      "name": "TestBfs",
+      "request": "launch",
+      "mainClass": "TestBfs",
+      "projectName": "Graph-Theory_98c9ad0"
+    },
+    {
+      "type": "java",
       "name": "TestDfs",
       "request": "launch",
       "mainClass": "DFS.TestDfs",
