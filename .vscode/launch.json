@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TestDfs",
+      "request": "launch",
+      "mainClass": "DFS.TestDfs",
+      "projectName": "Graph-Theory_98c9ad0"
+    },
+    {
+      "type": "java",
       "name": "Test",
       "request": "launch",
       "mainClass": "DFS.Test",

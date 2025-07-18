@@ -6,9 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
-class DFS {
+public class DFS {
 
-    // private static  int adjListSize = 5;
     public Graph_AdjList<Integer> graph;
 
     public DFS(Graph_AdjList<Integer> graph) {
@@ -23,7 +22,29 @@ class DFS {
         boolean[] visited = new boolean[graph.getList().size()];
         dfsRec(list, visited, node, res);
 
+        for (int i = 0; i < list.size(); i++) {
+            if (!visited[i]) {
+                dfsRec(list, visited, i, res);
+            }
+        }
+
         printRes(res);
+    }
+
+    public int totalComponents() {
+        int count = 0;
+        boolean[] visited = new boolean[graph.getList().size()];
+        ArrayList<Integer> res = new ArrayList<>();
+
+        for (int i = 0; i < graph.getList().size(); i++) {
+            if (!visited[i]) {
+                count++;
+                dfsRec(graph.getList(), visited, i, res);
+            }
+        }
+
+        System.out.println("Total components are: " + count);
+        return count;
     }
 
     // iteratively method in which each node is pushed on stack and then popped to
@@ -74,21 +95,5 @@ class DFS {
                 dfsRec(list, visited, i, res);
             }
         }
-    }
-}
-
-public class Test {
-    public static void main(String[] args) {
-        Graph_AdjList<Integer> graph = new Graph_AdjList<>(5, false);
-
-        graph.addEdge(0, 1);
-        graph.addEdge(0, 2);
-        graph.addEdge(1, 2);
-        graph.addEdge(2, 3);
-        graph.addEdge(2, 4);
-        graph.printGraph();
-
-        DFS dfs = new DFS(graph);
-        dfs.dfsIterative(1);
     }
 }
