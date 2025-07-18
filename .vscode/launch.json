@@ -1,0 +1,39 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Test",
+      "request": "launch",
+      "mainClass": "DFS.Test",
+      "projectName": "Graph-Theory_98c9ad0"
+    },
+    {
+      "type": "java",
+      "name": "Graph_AdjMatrix",
+      "request": "launch",
+      "mainClass": "Graph_AdjMatrix",
+      "projectName": "Graph-Theory_98c9ad0"
+    },
+    {
+      "type": "java",
+      "name": "Graph_AdjList",
+      "request": "launch",
+      "mainClass": "Graph_AdjList",
+      "projectName": "Graph-Theory_98c9ad0"
+    },
+    {
+      "type": "java",
+      "name": "DFS",
+      "request": "launch",
+      "mainClass": "DFS.DFS",
+      "projectName": "Graph-Theory_98c9ad0"
+    },
+    {
+      "type": "java",
+      "name": "Launch with Arguments Prompt",
+      "request": "launch",
+      "mainClass": "",
+      "args": "${command:SpecifyProgramArgs}"
+    }
+  ]
+}
