@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DungeonProblem",
+      "request": "launch",
+      "mainClass": "BFS.DungeonProblem",
+      "projectName": "Graph-Theory_98c9ad0"
+    },
+    {
+      "type": "java",
       "name": "TestBfs",
       "request": "launch",
       "mainClass": "BFS.TestBfs",
