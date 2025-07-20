@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TopsortDfs",
+      "request": "launch",
+      "mainClass": "Topsort.TopsortDfs",
+      "projectName": "Graph-Theory_98c9ad0"
+    },
+    {
+      "type": "java",
       "name": "DungeonProblem",
       "request": "launch",
       "mainClass": "BFS.DungeonProblem",
